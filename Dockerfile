@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN install
+RUN install /usr/src/package-lock.json
 
 COPY . .
 
